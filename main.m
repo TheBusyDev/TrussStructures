@@ -67,11 +67,10 @@ for k = 1:N_r
     node1 = rods (k,1);
     node2 = rods (k,2);
 
-    pos1 = nodes_pos (node1, :);
-    pos2 = nodes_pos (node2, :);
-    EA = rods_EA (k);
+    pos1 = nodes_pos (node1,:);
+    pos2 = nodes_pos (node2,:);
 
-    [K1, K2, K3, K4] = StiffnessMatrix (pos1, pos2, EA);
+    [K1, K2, K3, K4] = StiffnessMatrix (pos1, pos2, rods_EA(k));
 
     i = [2*node1-1, 2*node1];
     j = [2*node2-1, 2*node2];

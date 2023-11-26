@@ -1,2 +1,4 @@
-# TrussStructures
-A simple model to compute deformation for truss structures
+# Truss Structures
+A simple model to compute deformation for __truss structures__! Coded in MATLAB\
+\
+![](example.png)
